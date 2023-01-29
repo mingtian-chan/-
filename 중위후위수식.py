@@ -52,7 +52,7 @@ def solution(S):
 
             # 우선 순위를 비교했을 때 stack원소가 크거나 같으면, stack 원소를 answer에 append하고 입력된 거를 스택에 push
             if t >= s:
-                while not opStack.isEmpty() and prec[opStack.peek()] >= s: # 여기서 많이 헤맸음. prec[opStack.peek()]를 계속 업데이트 해줘야 하니까. 업데이트 안 하면 확인을 못함. 그리고 opStack.isEmpty()가 앞에 나와야 먼저 판단을 함 (Computer Science 적 내용 )
+                while not opStack.isEmpty() and prec[opStack.peek()] >= s: # 여기서 많이 헤맸음. prec[opStack.peek()]를 계속 업데이트 해줘야 하니까. 업데이트 안 하면 확인을 못함. 그리고 opStack.isEmpty()가 앞에 나와야 먼저 판단을 함 (Computer Science 적 내용 ("And"))
                     answer += opStack.pop()
                 opStack.push(i)
                         
